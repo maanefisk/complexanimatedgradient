@@ -1,0 +1,27 @@
+.gradientmoves {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 400px;
+    height: 100%;
+    background:
+            radial-gradient(ellipse at 50% 50%, #90F3FF 5%, rgba(144, 243, 255, 0) 50%) no-repeat no-repeat,
+            radial-gradient(ellipse at 50% 50%, #AFFFD3 5%, rgba(175, 255, 211, 0) 50%) no-repeat no-repeat,
+            radial-gradient(ellipse at 50% 50%, #F8B7CF 3%, rgba(248, 183, 207, 0) 50%) no-repeat no-repeat,
+            radial-gradient(ellipse at 50% 50%, #FFEABC 5%, rgba(255, 234, 188, 0) 50%) no-repeat no-repeat,
+            #FFFFFF;
+    background-position: 20% 10%, 10% 180%, 35% 470%, 70% 200%;
+    background-size: 200% 90%, 250% 90%, 400% 90%, 380% 90%;
+    animation: movethegradient 5s ease infinite;
+}
+@keyframes movethegradient {
+    0% {
+        background-position: 20% 10%, 10% 180%, 35% 470%, 70% 200%;
+    }
+    50% {
+        background-position: 40% 60%, 10% 310%, 40% 500%, 60% 300%;
+    }
+    100% {
+        background-position: 20% 10%, 10% 180%, 35% 470%, 70% 200%;
+    }
+}
